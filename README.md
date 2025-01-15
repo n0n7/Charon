@@ -1,3 +1,13 @@
 # bai_kam
 
-A new Flutter project.
+Chayen don't have category i want so I build my own knock off version.
+
+## run dev
+```bash
+flutter run
+```
+
+## build apk
+```bash
+flutter build apk --build-name=1.0.0 --build-number=1
+```
