@@ -118,9 +118,11 @@ class _GameScreenState extends State<GameScreen> {
     });
     updateCurrentWord();
     Future.delayed(const Duration(milliseconds: 500), () {
-      setState(() {
-        _gameState = GameState.GUESSING;
-      });
+      if (_gameState != GameState.END) {
+        setState(() {
+          _gameState = GameState.GUESSING;
+        });
+      }
     });
   }
 
@@ -134,9 +136,11 @@ class _GameScreenState extends State<GameScreen> {
     });
     updateCurrentWord();
     Future.delayed(const Duration(milliseconds: 500), () {
-      setState(() {
-        _gameState = GameState.GUESSING;
-      });
+      if (_gameState != GameState.END) {
+        setState(() {
+          _gameState = GameState.GUESSING;
+        });
+      }
     });
   }
 
