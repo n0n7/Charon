@@ -6,7 +6,7 @@ class StartGameDialog extends StatelessWidget {
 
   StartGameDialog({super.key, required this.category});
 
-  final List<int> timeLimitOptions = [60, 90, 120, 180];
+  final List<int> timeLimitOptions = [90, 120, 180, 240, 300];
 
   @override
   Widget build(BuildContext context) {
@@ -20,8 +20,10 @@ class StartGameDialog extends StatelessWidget {
         children: [
           const Text('Select Time Limit:'),
           const SizedBox(height: 10.0),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          Wrap(
+            spacing: 10.0, // Space between buttons horizontally
+            runSpacing: 10.0, // Space between rows of buttons
+            alignment: WrapAlignment.center, // Center align buttons
             children: timeLimitOptions
                 .map((timeLimit) => _buildTimeButton(context, timeLimit))
                 .toList(),
