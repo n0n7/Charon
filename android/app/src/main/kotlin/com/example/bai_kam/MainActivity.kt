@@ -1,4 +1,4 @@
-package com.example.bai_kam
+package com.example.charon
 
 import io.flutter.embedding.android.FlutterActivity
 

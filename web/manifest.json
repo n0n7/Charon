@@ -1,6 +1,6 @@
 {
-    "name": "bai_kam",
-    "short_name": "bai_kam",
+    "name": "charon",
+    "short_name": "charon",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
