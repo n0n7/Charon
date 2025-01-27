@@ -11,3 +11,7 @@ flutter run
 ```bash
 flutter build apk --build-name=1.0.0 --build-number=1
 ```
+
+## apk file
+download apk file from 
+/build/app/outputs/flutter-apk/app-release.apk
